@@ -3,6 +3,7 @@
  const path = require('path');
 
  module.exports = {
+     entry: './src/index.js',
      module: {
          rules: [{
              loader: 'babel-loader',
@@ -19,6 +20,7 @@
      },
      devtool: 'cheap-module-eval-source-map',
      devServer: {
-         contentBase: path.join(__dirname, 'dist')
+         contentBase: path.join(__dirname, 'dist'),
+         historyApiFallback: true
      }
  };
