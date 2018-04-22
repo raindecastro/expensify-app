@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "Rain de Castro",
   "license": "MIT",
+  "engines": {
+    "node": "8.11.1"
+  },
   "scripts": {
     "live": "webpack-dev-server --mode development",
     "dev": "webpack --mode development",
@@ -11,7 +14,7 @@
     "test": "jest --config=jest.config.json",
     "serve": "live-server dist/",
     "start": "node server/server.js",
-    "heroku-postbuild": "yarn run build"
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
