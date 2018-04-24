@@ -1,5 +1,4 @@
 import moment from 'moment';
-import { create } from 'domain';
 
 //Get visible expenses
 const getVisibleExpenses = (expenses, {text, sortBy, startDate, endDate}) => {
